@@ -11,6 +11,7 @@ import {
 } from "recharts";
 import { memo, useMemo } from "react";
 import { Box, Flex } from "@chakra-ui/react";
+import { getAccessibleChartColorTokenByIndex } from "./chartA11yTokens";
 
 interface DataPoint {
   name: string;
@@ -194,7 +195,7 @@ export default function LineChart({ data: propData = data, showPoints = true }: 
     data: propData,
     series: valueKeys.map((key, index) => ({
       name: key,
-      color: `chart.categorical.${(index % 4) + 1}` // Cycle through 4 colors
+      color: getAccessibleChartColorTokenByIndex(index),
     })),
   });
 

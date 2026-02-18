@@ -61,6 +61,7 @@ pnpm check
 | `pnpm validate:tokens` | Validates token JSON structure and references. |
 | `pnpm validate:css` | Validates generated CSS artifacts. |
 | `pnpm validate:chakra` | Validates generated Chakra artifacts. |
+| `pnpm validate:chart-a11y` | Validates chart color token contrast for non-text graphics. |
 | `pnpm clean` | Removes generated artifacts via Style Dictionary clean. |
 | `pnpm check` | Full pipeline: validate + build + output checks. |
 
