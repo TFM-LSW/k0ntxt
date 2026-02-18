@@ -6,6 +6,7 @@ import '@testing-library/jest-dom';
 import { theme } from '../../../theme';
 import { axe } from 'jest-axe';
 import userEvent from '@testing-library/user-event';
+import { getAccessibleChartColorTokenByIndex } from './chartA11yTokens';
 
 // Mock the Recharts components to avoid issues with testing
 jest.mock('recharts', () => {
@@ -18,7 +19,9 @@ jest.mock('recharts', () => {
     LineChart: ({ children }: { children: React.ReactNode }) => (
       <div role="presentation" data-testid="recharts-line-chart" style={{ cursor: 'pointer' }}>{children}</div>
     ),
-    Line: () => <div data-testid="recharts-line" style={{ stroke: 'chart.categorical.1' }} />,
+    Line: ({ stroke }: { stroke?: string }) => (
+      <div data-testid="recharts-line" style={{ stroke: stroke || 'chart.categorical.1.dark' }} />
+    ),
     XAxis: () => <div data-testid="recharts-x-axis" />,
     YAxis: () => <div data-testid="recharts-y-axis" />,
     CartesianGrid: () => <div data-testid="recharts-grid" style={{ stroke: 'border.muted' }} />,
@@ -33,9 +36,9 @@ jest.mock('recharts', () => {
           marginTop: '4px'
         }}
       >
-        <li role="listitem" style={{ fontFamily: 'body' }}>value1</li>
-        <li role="listitem" style={{ fontFamily: 'body' }}>value2</li>
-        <li role="listitem" style={{ fontFamily: 'body' }}>value3</li>
+        <li role="listitem" style={{ fontFamily: 'body', color: getAccessibleChartColorTokenByIndex(0) }}>value1</li>
+        <li role="listitem" style={{ fontFamily: 'body', color: getAccessibleChartColorTokenByIndex(1) }}>value2</li>
+        <li role="listitem" style={{ fontFamily: 'body', color: getAccessibleChartColorTokenByIndex(2) }}>value3</li>
       </ul>
     ),
   };
@@ -152,10 +155,14 @@ describe('LineChart', () => {
       renderLineChart({ data: testData.extraValues });
       const lines = screen.getAllByTestId('recharts-line');
       const colors = lines.map(line => line.style.stroke);
-      // All lines should use chart.categorical.1 since we're using the same mock for all lines
-      colors.forEach(color => {
-        expect(color).toBe('chart.categorical.1');
-      });
+      const expectedColors = [
+        getAccessibleChartColorTokenByIndex(0),
+        getAccessibleChartColorTokenByIndex(1),
+        getAccessibleChartColorTokenByIndex(2),
+        getAccessibleChartColorTokenByIndex(3),
+        getAccessibleChartColorTokenByIndex(4),
+      ];
+      expect(colors).toEqual(expectedColors);
     });
   });
 
@@ -230,9 +237,9 @@ describe('LineChart', () => {
       });
 
       // Check line colors
-      elements.lines.forEach(line => {
+      elements.lines.forEach((line, index) => {
         expect(line).toHaveStyle({
-          stroke: 'chart.categorical.1'
+          stroke: getAccessibleChartColorTokenByIndex(index)
         });
       });
 

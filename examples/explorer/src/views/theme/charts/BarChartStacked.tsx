@@ -2,6 +2,7 @@
 
 import { Chart, useChart } from "@chakra-ui/charts"
 import { Bar, BarChart, CartesianGrid, Legend, Tooltip, XAxis } from "recharts"
+import { getAccessibleChartColorTokenByCategory } from "./chartA11yTokens"
 
 const BarChartStacked = () => {
   const chart = useChart({
@@ -16,39 +17,41 @@ const BarChartStacked = () => {
       { windows: 185, mac: 91, linux: 126, month: "November" },
     ],
     series: [
-      { name: "windows", color: "chart.categorical.1", stackId: "a" },
-      { name: "mac", color: "chart.categorical.2", stackId: "a" },
-      { name: "linux", color: "chart.categorical.3", stackId: "a" },
+      { name: "windows", color: getAccessibleChartColorTokenByCategory(1), stackId: "a" },
+      { name: "mac", color: getAccessibleChartColorTokenByCategory(2), stackId: "a" },
+      { name: "linux", color: getAccessibleChartColorTokenByCategory(3), stackId: "a" },
     ],
   })
 
   return (
-    <Chart.Root maxH="sm" chart={chart}>
-      <BarChart data={chart.data}>
-        <CartesianGrid stroke={chart.color("border.muted")} vertical={false} />
-        <XAxis
-          axisLine={false}
-          tickLine={false}
-          dataKey={chart.key("month")}
-          tickFormatter={(value) => value.slice(0, 3)}
-        />
-        <Tooltip
-          cursor={false}
-          animationDuration={100}
-          content={<Chart.Tooltip />}
-        />
-        <Legend content={<Chart.Legend />} />
-        {chart.series.map((item) => (
-          <Bar
-            isAnimationActive={false}
-            key={item.name}
-            dataKey={chart.key(item.name)}
-            fill={chart.color(item.color)}
-            stackId={item.stackId}
+    <div role="region" aria-label="Stacked operating system bar chart">
+      <Chart.Root maxH="sm" chart={chart}>
+        <BarChart data={chart.data}>
+          <CartesianGrid stroke={chart.color("border.muted")} vertical={false} />
+          <XAxis
+            axisLine={false}
+            tickLine={false}
+            dataKey={chart.key("month")}
+            tickFormatter={(value) => value.slice(0, 3)}
           />
-        ))}
-      </BarChart>
-    </Chart.Root>
+          <Tooltip
+            cursor={false}
+            animationDuration={100}
+            content={<Chart.Tooltip />}
+          />
+          <Legend content={<Chart.Legend />} />
+          {chart.series.map((item) => (
+            <Bar
+              isAnimationActive={false}
+              key={item.name}
+              dataKey={chart.key(item.name)}
+              fill={chart.color(item.color)}
+              stackId={item.stackId}
+            />
+          ))}
+        </BarChart>
+      </Chart.Root>
+    </div>
   )
 }
 

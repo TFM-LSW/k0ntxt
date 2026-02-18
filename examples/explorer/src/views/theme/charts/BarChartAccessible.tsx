@@ -5,6 +5,7 @@ import React from 'react';
 import { Chart, useChart } from "@chakra-ui/charts"
 import { Bar, BarChart, CartesianGrid, XAxis, YAxis, Cell } from "recharts"
 import type { BarProps } from "recharts"
+import { getAccessibleChartColorTokenByCategory } from "./chartA11yTokens"
 
 interface CustomBarProps extends Omit<BarProps, 'shape'> {
   x?: number;
@@ -134,44 +135,46 @@ type DIBarChartProps = {
 const DIBarChart: React.FC<DIBarChartProps> = ({ showPatternOverlay = true }) => {
     const chart = useChart({
         data: [
-          { allocation: 60, type: "Stock", color: "chart.categorical.1" },
-          { allocation: 45, type: "Crypto", color: "chart.categorical.2" },
-          { allocation: 12, type: "ETF", color: "chart.categorical.3" },
-          { allocation: 4, type: "Cash", color: "chart.categorical.4" },
+          { allocation: 60, type: "Stock", color: getAccessibleChartColorTokenByCategory(1) },
+          { allocation: 45, type: "Crypto", color: getAccessibleChartColorTokenByCategory(2) },
+          { allocation: 12, type: "ETF", color: getAccessibleChartColorTokenByCategory(3) },
+          { allocation: 4, type: "Cash", color: getAccessibleChartColorTokenByCategory(4) },
         ],
         series: [{ name: "allocation" }],
       })
     
       return (
-        <Chart.Root maxH="sm" chart={chart}>
-          <BarChart data={chart.data}>
-            <CartesianGrid stroke={chart.color("border.muted")} vertical={false} />
-            <XAxis axisLine={false} tickLine={false} dataKey={chart.key("type")} />
-            <YAxis
-              axisLine={false}
-              tickLine={false}
-              domain={[0, 100]}
-              tickFormatter={(value) => `${value}%`}
-            />
-            <Bar
-              isAnimationActive={false}
-              dataKey={chart.key("allocation")}
-              shape={(props: BarProps) => (
-                <CustomBar
-                  {...props as CustomBarProps}
-                  showPatternOverlay={showPatternOverlay}
-                />
-              )}
-            >
-              {chart.data.map((entry, index) => (
-                <Cell
-                  key={`cell-${index}`}
-                  fill={chart.color(entry.color)}
-                />
-              ))}
-            </Bar>
-          </BarChart>
-        </Chart.Root>
+        <div role="region" aria-label="Patterned allocation bar chart">
+          <Chart.Root maxH="sm" chart={chart}>
+            <BarChart data={chart.data}>
+              <CartesianGrid stroke={chart.color("border.muted")} vertical={false} />
+              <XAxis axisLine={false} tickLine={false} dataKey={chart.key("type")} />
+              <YAxis
+                axisLine={false}
+                tickLine={false}
+                domain={[0, 100]}
+                tickFormatter={(value) => `${value}%`}
+              />
+              <Bar
+                isAnimationActive={false}
+                dataKey={chart.key("allocation")}
+                shape={(props: BarProps) => (
+                  <CustomBar
+                    {...props as CustomBarProps}
+                    showPatternOverlay={showPatternOverlay}
+                  />
+                )}
+              >
+                {chart.data.map((entry, index) => (
+                  <Cell
+                    key={`cell-${index}`}
+                    fill={chart.color(entry.color)}
+                  />
+                ))}
+              </Bar>
+            </BarChart>
+          </Chart.Root>
+        </div>
       )
 };
 

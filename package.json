@@ -13,7 +13,8 @@
     "validate:tokens": "node scripts/validate-tokens.mjs",
     "validate:css": "node scripts/validate-css-output.mjs",
     "validate:chakra": "node scripts/validate-chakra-output.mjs",
-    "check": "npm run validate:tokens && npm run build && npm run validate:css && npm run validate:chakra",
+    "validate:chart-a11y": "node scripts/validate-chart-a11y.mjs",
+    "check": "npm run validate:tokens && npm run build && npm run validate:css && npm run validate:chakra && npm run validate:chart-a11y",
     "init": "style-dictionary init",
     "clean": "style-dictionary clean"
   },
