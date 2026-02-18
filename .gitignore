@@ -1,0 +1,78 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+/.vs
+/.vscode
+/.cursor
+/.idea
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# typings
+/remote-types
+/types/types.d.ts
+/.wp_federation
+
+# testing
+/coverage
+
+# production
+/build/*
+!/build/css/
+/build/css/*
+!/build/css/k0-variables.css
+!/build/css/k0-variables.light.css
+!/build/css/k0-variables.dark.css
+!/build/js/
+/build/js/*
+!/build/js/k0-tokens.js
+!/build/chakra-v2/
+/build/chakra-v2/*
+!/build/chakra-v2/chakra-v2-theme.js
+!/build/chakra-v3/
+/build/chakra-v3/*
+!/build/chakra-v3/chakra-v3-tokens.js
+!/build/chakra-v3/chakra-v3-semanticTokens.js
+/dist
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+.eslintcache
+
+.env.ephemeral
+.env.development
+.env.staging
+.env.production
+.env.terraform
+
+cypress/**/*.mp4
+
+**/.env
+**/.terraform/**
+**/tf-api-token.auto.tfvars.json
+/terraform/godaddy.auto.tfvars.json
+/terraform/docker.auto.tfvars.json
+
+/azcopy*
+.localdata/
+/gdb
+cypress.env.json
+
+# explorer local artifacts
+/examples/explorer/.DS_Store
+/examples/explorer/*.local
+/examples/explorer/*.log*
+/examples/explorer/node_modules/
+/examples/explorer/dist/
+/examples/explorer/.idea/
+/examples/explorer/.vscode/*
+!/examples/explorer/.vscode/extensions.json

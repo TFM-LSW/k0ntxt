@@ -1,0 +1,247 @@
+/**
+ * Do not edit directly, this file was auto-generated.
+ */
+
+:root {
+  --global-colors-white: #ffffff;
+  --global-colors-black: #000000;
+  --global-colors-neutral-0: #ffffff;
+  --global-colors-neutral-50: #f6f8fb;
+  --global-colors-neutral-100: #edf1f6;
+  --global-colors-neutral-200: #dce4ee;
+  --global-colors-neutral-300: #c5d2e0;
+  --global-colors-neutral-400: #adbfd1;
+  --global-colors-neutral-500: #93aac1;
+  --global-colors-neutral-600: #73889f;
+  --global-colors-neutral-700: #566678;
+  --global-colors-neutral-800: #394652;
+  --global-colors-neutral-900: #1f2a32;
+  --global-colors-neutral-950: #0f151b;
+  --global-colors-neutral-1000: #000000;
+  --global-colors-charcoal-50: #f7f7f8;
+  --global-colors-charcoal-100: #ededf0;
+  --global-colors-charcoal-200: #d9dce1;
+  --global-colors-charcoal-300: #c0c6cf;
+  --global-colors-charcoal-400: #9ea8b5;
+  --global-colors-charcoal-500: #7b8695;
+  --global-colors-charcoal-600: #5f6977;
+  --global-colors-charcoal-700: #474f5b;
+  --global-colors-charcoal-800: #323842;
+  --global-colors-charcoal-900: #20252d;
+  --global-colors-charcoal-950: #12161b;
+  --global-colors-cyan-50: #effbfd;
+  --global-colors-cyan-100: #d8f5fb;
+  --global-colors-cyan-200: #b5ebf8;
+  --global-colors-cyan-300: #89ddf3;
+  --global-colors-cyan-400: #5bcce9;
+  --global-colors-cyan-500: #2fb7dc;
+  --global-colors-cyan-600: #1f95bc;
+  --global-colors-cyan-700: #177297;
+  --global-colors-cyan-800: #0f526f;
+  --global-colors-cyan-900: #083547;
+  --global-colors-cyan-950: #041a24;
+  --global-colors-purple-50: #f4f2fd;
+  --global-colors-purple-100: #e6e1fc;
+  --global-colors-purple-200: #cdc1f8;
+  --global-colors-purple-300: #ae99f1;
+  --global-colors-purple-400: #8f71e8;
+  --global-colors-purple-500: #7350db;
+  --global-colors-purple-600: #5b3fc0;
+  --global-colors-purple-700: #442f96;
+  --global-colors-purple-800: #30206b;
+  --global-colors-purple-900: #1d1443;
+  --global-colors-purple-950: #0f0a24;
+  --global-colors-teal-50: #eefbf8;
+  --global-colors-teal-100: #d7f6ef;
+  --global-colors-teal-200: #b2ecdf;
+  --global-colors-teal-300: #85dfca;
+  --global-colors-teal-400: #56cfb2;
+  --global-colors-teal-500: #2fbb99;
+  --global-colors-teal-600: #22967b;
+  --global-colors-teal-700: #1a735f;
+  --global-colors-teal-800: #125042;
+  --global-colors-teal-900: #0b312a;
+  --global-colors-teal-950: #041a15;
+  --global-colors-yellow-50: #fff9ec;
+  --global-colors-yellow-100: #fff0d2;
+  --global-colors-yellow-200: #ffe1a3;
+  --global-colors-yellow-300: #ffd16f;
+  --global-colors-yellow-400: #ffc142;
+  --global-colors-yellow-500: #f2ab1f;
+  --global-colors-yellow-600: #c88716;
+  --global-colors-yellow-700: #9b6712;
+  --global-colors-yellow-800: #6f480d;
+  --global-colors-yellow-900: #462c08;
+  --global-colors-yellow-950: #241604;
+  --global-colors-pink-50: #fef2f7;
+  --global-colors-pink-100: #fde3ef;
+  --global-colors-pink-200: #fbc5df;
+  --global-colors-pink-300: #f7a0ca;
+  --global-colors-pink-400: #f076b3;
+  --global-colors-pink-500: #e74f9b;
+  --global-colors-pink-600: #c3387e;
+  --global-colors-pink-700: #97295f;
+  --global-colors-pink-800: #6d1c44;
+  --global-colors-pink-900: #44102b;
+  --global-colors-pink-950: #230614;
+  --global-colors-red-50: #fff1ef;
+  --global-colors-red-100: #ffe1dc;
+  --global-colors-red-200: #ffc3b8;
+  --global-colors-red-300: #ff9f8a;
+  --global-colors-red-400: #f8775c;
+  --global-colors-red-500: #ea5338;
+  --global-colors-red-600: #c53b28;
+  --global-colors-red-700: #9a2d1f;
+  --global-colors-red-800: #6f2016;
+  --global-colors-red-900: #45120d;
+  --global-colors-red-950: #240806;
+  --global-colors-green-50: #f2faef;
+  --global-colors-green-100: #e1f4d8;
+  --global-colors-green-200: #c3eab1;
+  --global-colors-green-300: #9fdc84;
+  --global-colors-green-400: #77cc5d;
+  --global-colors-green-500: #52b33d;
+  --global-colors-green-600: #3f9130;
+  --global-colors-green-700: #306f25;
+  --global-colors-green-800: #224e1a;
+  --global-colors-green-900: #14300f;
+  --global-colors-green-950: #0a1908;
+  --global-colors-orange-50: #fff5ef;
+  --global-colors-orange-100: #ffe7d8;
+  --global-colors-orange-200: #ffd0b0;
+  --global-colors-orange-300: #ffb384;
+  --global-colors-orange-400: #ff9358;
+  --global-colors-orange-500: #f87433;
+  --global-colors-orange-600: #cf5826;
+  --global-colors-orange-700: #a13f1d;
+  --global-colors-orange-800: #742b15;
+  --global-colors-orange-900: #49180c;
+  --global-colors-orange-950: #260b05;
+  --global-colors-blue-50: #eef4ff;
+  --global-colors-blue-100: #dde9ff;
+  --global-colors-blue-200: #bfd2ff;
+  --global-colors-blue-300: #97b4ff;
+  --global-colors-blue-400: #6f93ff;
+  --global-colors-blue-500: #4f74f0;
+  --global-colors-blue-600: #3d5cd0;
+  --global-colors-blue-700: #2f46a8;
+  --global-colors-blue-800: #22327a;
+  --global-colors-blue-900: #151f4d;
+  --global-colors-blue-950: #0a1028;
+  --global-font-size-1: 10px;
+  --global-font-size-2: 12px;
+  --global-font-size-3: 14px;
+  --global-font-size-4: 16px;
+  --global-font-size-5: 18px;
+  --global-font-size-6: 20px;
+  --global-font-size-7: 24px;
+  --global-font-size-8: 28px;
+  --global-font-size-9: 32px;
+  --global-font-size-base: 16px; /** Base font size for calculations */
+  --global-font-line-height-1: 14px;
+  --global-font-line-height-2: 16px;
+  --global-font-line-height-3: 20px;
+  --global-font-line-height-4: 24px;
+  --global-font-line-height-5: 28px;
+  --global-font-line-height-6: 32px;
+  --global-font-family-title: Grueber, Lato, Arial, sans-serif; /** Font family for main page titles and headings */
+  --global-font-family-heading: Lato, Arial, sans-serif; /** Font family for section headings and subheadings */
+  --global-font-family-body: Lato, Arial, sans-serif; /** Font family for body text and general content */
+  --global-font-weight-regular: 400; /** Default font weight for body text */
+  --global-font-weight-bold: 700; /** Font weight for emphasis and headings */
+  --global-semantic-color-accent-primary: var(--global-colors-blue-600); /** Primary accent color for interactive elements in light mode */
+  --global-semantic-color-accent-secondary: var(--global-colors-pink-600); /** Secondary accent color for interactive elements in light mode */
+  --global-semantic-color-text-default: var(--global-colors-charcoal-800); /** Primary text color for light mode */
+  --global-semantic-color-text-subtle: var(--global-colors-charcoal-500); /** Secondary text color for light mode */
+  --global-semantic-color-text-link: var(--global-colors-blue-700); /** Link text color for light mode */
+  --global-semantic-color-text-link-hover: var(--global-colors-cyan-800); /** Link hover text color for light mode */
+  --global-semantic-color-text-warning: var(--global-colors-orange-800); /** Warning text color for light mode */
+  --global-semantic-color-text-error: var(--global-colors-red-700); /** Error text color for light mode */
+  --global-semantic-color-text-success: var(--global-colors-green-700); /** Success text color for light mode */
+  --global-semantic-color-text-info: var(--global-colors-blue-600); /** Informational text color for light mode */
+  --global-semantic-color-icon-primary: var(--global-colors-charcoal-600); /** Primary icon color for light mode */
+  --global-semantic-color-icon-warning: var(--global-colors-orange-800); /** Warning icon color for light mode */
+  --global-semantic-color-icon-error: var(--global-colors-red-700); /** Error icon color for light mode */
+  --global-semantic-color-icon-success: var(--global-colors-green-700); /** Success icon color for light mode */
+  --global-semantic-color-icon-info: var(--global-colors-blue-600); /** Informational icon color for light mode */
+  --alias-color-black: var(--global-colors-black); /** Brand black color */
+  --alias-color-white: var(--global-colors-white); /** Brand white color */
+  --alias-color-brand-charcoal: var(--global-colors-charcoal-700); /** Primary brand color used for main branding elements */
+  --alias-color-brand-blue: var(--global-colors-cyan-500); /** Secondary brand color for accents and highlights */
+  --alias-color-brand-purple: var(--global-colors-purple-500); /** Secondary brand color for accents and highlights */
+  --alias-color-brand-green: var(--global-colors-teal-500); /** Secondary brand color for accents and highlights */
+  --alias-color-brand-yellow: var(--global-colors-yellow-500); /** Secondary brand color for accents and highlights */
+  --alias-color-brand-pink: var(--global-colors-pink-500); /** Secondary brand color for accents and highlights */
+  --alias-color-brand-neutral: var(--global-colors-neutral-500); /** Primary brand color used for main branding elements */
+  --alias-color-status-negative: var(--global-colors-red-500); /** Color used to indicate negative or error states. */
+  --alias-color-status-positive: var(--global-colors-green-500); /** Color used to indicate positive or success states. */
+  --alias-color-status-caution: var(--global-colors-orange-500); /** Color used to indicate caution or warning states. */
+  --alias-color-status-info: var(--global-colors-blue-500); /** Color used to indicate informational states. */
+  --alias-color-chart-categorical-1-lighter: var(--global-colors-yellow-100); /** Lighter variant of chart color 1 */
+  --alias-color-chart-categorical-1-light: var(--global-colors-yellow-300); /** Light variant of chart color 1 */
+  --alias-color-chart-categorical-1-base: var(--global-colors-yellow-500); /** Chart color 1 for categorical data */
+  --alias-color-chart-categorical-1-dark: var(--global-colors-yellow-700); /** Dark variant of chart color 1 */
+  --alias-color-chart-categorical-1-darker: var(--global-colors-yellow-900); /** Darker variant of chart color 1 */
+  --alias-color-chart-categorical-1-hover: var(--global-colors-yellow-700); /** Hover state for chart color 1 */
+  --alias-color-chart-categorical-2-lighter: var(--global-colors-teal-100); /** Lighter variant of chart color 2 */
+  --alias-color-chart-categorical-2-light: var(--global-colors-teal-300); /** Light variant of chart color 2 */
+  --alias-color-chart-categorical-2-base: var(--global-colors-teal-500); /** Chart color 2 for categorical data */
+  --alias-color-chart-categorical-2-dark: var(--global-colors-teal-700); /** Dark variant of chart color 2 */
+  --alias-color-chart-categorical-2-darker: var(--global-colors-teal-900); /** Darker variant of chart color 2 */
+  --alias-color-chart-categorical-2-hover: var(--global-colors-teal-700); /** Hover state for chart color 2 */
+  --alias-color-chart-categorical-3-lighter: var(--global-colors-cyan-100); /** Lighter variant of chart color 3 */
+  --alias-color-chart-categorical-3-light: var(--global-colors-cyan-300); /** Light variant of chart color 3 */
+  --alias-color-chart-categorical-3-base: var(--global-colors-cyan-500); /** Chart color 3 for categorical data */
+  --alias-color-chart-categorical-3-dark: var(--global-colors-cyan-700); /** Dark variant of chart color 3 */
+  --alias-color-chart-categorical-3-darker: var(--global-colors-cyan-900); /** Darker variant of chart color 3 */
+  --alias-color-chart-categorical-3-hover: var(--global-colors-cyan-700); /** Hover state for chart color 3 */
+  --alias-color-chart-categorical-4-lighter: var(--global-colors-purple-100); /** Lighter variant of chart color 4 */
+  --alias-color-chart-categorical-4-light: var(--global-colors-purple-300); /** Light variant of chart color 4 */
+  --alias-color-chart-categorical-4-base: var(--global-colors-purple-500); /** Chart color 4 for categorical data */
+  --alias-color-chart-categorical-4-dark: var(--global-colors-purple-700); /** Dark variant of chart color 4 */
+  --alias-color-chart-categorical-4-darker: var(--global-colors-purple-900); /** Darker variant of chart color 4 */
+  --alias-color-chart-categorical-4-hover: var(--global-colors-purple-700); /** Hover state for chart color 4 */
+  --alias-color-chart-categorical-5-lighter: var(--global-colors-charcoal-100); /** Lighter variant of chart color 5 */
+  --alias-color-chart-categorical-5-light: var(--global-colors-charcoal-300); /** Light variant of chart color 5 */
+  --alias-color-chart-categorical-5-base: var(--global-colors-charcoal-500); /** Chart color 5 for categorical data */
+  --alias-color-chart-categorical-5-dark: var(--global-colors-charcoal-700); /** Dark variant of chart color 5 */
+  --alias-color-chart-categorical-5-darker: var(--global-colors-charcoal-900); /** Darker variant of chart color 5 */
+  --alias-color-chart-categorical-5-hover: var(--global-colors-charcoal-700); /** Hover state for chart color 5 */
+  --alias-color-chart-categorical-6-lighter: var(--global-colors-blue-100); /** Lighter variant of chart color 6 */
+  --alias-color-chart-categorical-6-light: var(--global-colors-blue-300); /** Light variant of chart color 6 */
+  --alias-color-chart-categorical-6-base: var(--global-colors-blue-500); /** Chart color 6 for categorical data */
+  --alias-color-chart-categorical-6-dark: var(--global-colors-blue-700); /** Dark variant of chart color 6 */
+  --alias-color-chart-categorical-6-darker: var(--global-colors-blue-900); /** Darker variant of chart color 6 */
+  --alias-color-chart-categorical-6-hover: var(--global-colors-blue-700); /** Hover state for chart color 6 */
+  --alias-color-surface-background: var(--global-colors-neutral-50); /** Background color */
+  --alias-color-surface-header: var(--global-colors-charcoal-500); /** Header background color */
+  --alias-font-title-xlarge: var(--global-font-weight-regular) var(--global-font-size-9)/var(--global-font-line-height-6) var(--global-font-family-title); /** Extra large title typography */
+  --alias-font-title-large: var(--global-font-weight-regular) var(--global-font-size-8)/var(--global-font-line-height-5) var(--global-font-family-title); /** Large title typography */
+  --alias-font-title-medium: var(--global-font-weight-regular) var(--global-font-size-7)/var(--global-font-line-height-4) var(--global-font-family-title); /** Medium title typography */
+  --alias-font-title-small: var(--global-font-weight-regular) var(--global-font-size-6)/var(--global-font-line-height-3) var(--global-font-family-title); /** Small title typography */
+  --alias-font-title-xsmall: var(--global-font-weight-regular) var(--global-font-size-4)/var(--global-font-line-height-2) var(--global-font-family-title); /** Extra small title typography */
+  --alias-font-heading-xlarge: var(--global-font-weight-regular) var(--global-font-size-9)/var(--global-font-line-height-6) var(--global-font-family-heading); /** Extra large heading typography */
+  --alias-font-heading-large: var(--global-font-weight-regular) var(--global-font-size-8)/var(--global-font-line-height-5) var(--global-font-family-heading); /** Large heading typography */
+  --alias-font-heading-medium: var(--global-font-weight-regular) var(--global-font-size-7)/var(--global-font-line-height-4) var(--global-font-family-heading); /** Medium heading typography */
+  --alias-font-heading-small: var(--global-font-weight-regular) var(--global-font-size-6)/var(--global-font-line-height-3) var(--global-font-family-heading); /** Small heading typography */
+  --alias-font-heading-xsmall: var(--global-font-weight-regular) var(--global-font-size-4)/var(--global-font-line-height-2) var(--global-font-family-heading); /** Extra small heading typography */
+  --alias-font-body-large: var(--global-font-weight-regular) var(--global-font-size-5)/var(--global-font-line-height-5) var(--global-font-family-body); /** Large body typography */
+  --alias-font-body-medium: var(--global-font-weight-regular) var(--global-font-size-4)/var(--global-font-line-height-4) var(--global-font-family-body); /** Medium body typography */
+  --alias-font-body-small: var(--global-font-weight-regular) var(--global-font-size-3)/var(--global-font-line-height-3) var(--global-font-family-body); /** Small body typography */
+  --alias-font-body-xsmall: var(--global-font-weight-regular) var(--global-font-size-2)/var(--global-font-line-height-2) var(--global-font-family-body); /** Extra small body typography */
+  --alias-color-accent-primary: var(--global-semantic-color-accent-primary); /** Primary accent color for interactive elements */
+  --alias-color-accent-secondary: var(--global-semantic-color-accent-secondary); /** Secondary accent color for interactive elements */
+  --alias-color-text-default: var(--global-semantic-color-text-default); /** Primary text color */
+  --alias-color-text-link: var(--global-semantic-color-text-link); /** Link color */
+  --alias-color-text-warning: var(--global-semantic-color-text-warning); /** Text color used for warning messages. */
+  --alias-color-text-error: var(--global-semantic-color-text-error); /** Text color used for error messages. */
+  --alias-color-text-success: var(--global-semantic-color-text-success); /** Text color used for success messages. */
+  --alias-color-text-info: var(--global-semantic-color-text-info); /** Text color used for informational messages. */
+  --alias-color-text-link-hover: var(--global-semantic-color-text-link-hover); /** Link color on hover */
+  --alias-color-icon-primary: var(--global-semantic-color-icon-primary); /** Icon color */
+  --alias-color-icon-success: var(--global-semantic-color-icon-success); /** Icon color used to indicate success. */
+  --alias-color-icon-warning: var(--global-semantic-color-icon-warning); /** Icon color used to indicate warnings. */
+  --alias-color-icon-error: var(--global-semantic-color-icon-error); /** Icon color used to indicate errors. */
+  --alias-color-icon-info: var(--global-semantic-color-icon-info); /** Icon color used to indicate informational states. */
+  --alias-color-text-linkhover: var(--alias-color-text-link-hover); /** Deprecated alias. Use alias.color.text.linkHover. */
+}

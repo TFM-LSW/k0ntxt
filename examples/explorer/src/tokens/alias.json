@@ -1,0 +1,503 @@
+{
+  "$metadata": {
+    "$type": "meta",
+    "tokenSet": "alias"
+  },
+  "alias": {
+    "color": {
+      "brand": {
+        "charcoal": {
+          "$type": "color",
+          "$value": "{global.colors.charcoal.500}",
+          "$description": "Primary brand color used for main branding elements"
+        },
+        "white": {
+          "$type": "color",
+          "$value": "{global.colors.neutral.0}",
+          "$description": "Primary brand color used for main branding elements"
+        },
+        "blue": {
+          "$type": "color",
+          "$value": "{global.colors.cyan.500}",
+          "$description": "Secondary brand color for accents and highlights"
+        },
+        "purple": {
+          "$type": "color",
+          "$value": "{global.colors.purple.500}",
+          "$description": "Secondary brand color for accents and highlights"
+        },
+        "green": {
+          "$type": "color",
+          "$value": "{global.colors.teal.500}",
+          "$description": "Secondary brand color for accents and highlights"
+        },
+        "yellow": {
+          "$type": "color",
+          "$value": "{global.colors.yellow.500}",
+          "$description": "Secondary brand color for accents and highlights"
+        },
+        "pink": {
+          "$type": "color",
+          "$value": "{global.colors.pink.500}",
+          "$description": "Secondary brand color for accents and highlights"
+        }
+      },
+      "accent": {
+        "primary": {
+          "$type": "color",
+          "$value": "{global.colors.accent.primary}",
+          "$description": "Primary accent color for interactive elements"
+        },
+        "secondary": {
+          "$type": "color",
+          "$value": "{global.colors.accent.secondary}",
+          "$description": "Secondary accent color for interactive elements"
+        }
+      },
+      "status": {
+        "negative": {
+          "$type": "color",
+          "$value": "{global.colors.red.500}",
+          "$description": "Color used to indicate negative or error states."
+        },
+        "positive": {
+          "$type": "color",
+          "$value": "{global.colors.green.500}",
+          "$description": "Color used to indicate positive or success states."
+        },
+        "caution": {
+          "$type": "color",
+          "$value": "{global.colors.orange.500}",
+          "$description": "Color used to indicate caution or warning states."
+        },
+        "info": {
+          "$type": "color",
+          "$value": "{global.colors.blue.500}",
+          "$description": "Color used to indicate informational states."
+        }
+      },
+      "chart": {
+        "categorical": {
+          "1": {
+            "lighter": {
+              "$type": "color",
+              "$value": "{global.colors.yellow.100}",
+              "$description": "Lighter variant of chart color 1"
+            },
+            "light": {
+              "$type": "color",
+              "$value": "{global.colors.yellow.300}",
+              "$description": "Light variant of chart color 1"
+            },
+            "base": {
+              "$type": "color",
+              "$value": "{global.colors.yellow.500}",
+              "$description": "Chart color 1 for categorical data"
+            },
+            "dark": {
+              "$type": "color",
+              "$value": "{global.colors.yellow.700}",
+              "$description": "Dark variant of chart color 1"
+            },
+            "darker": {
+              "$type": "color",
+              "$value": "{global.colors.yellow.900}",
+              "$description": "Darker variant of chart color 1"
+            },
+            "hover": {
+              "$type": "color",
+              "$value": "{global.colors.yellow.700}",
+              "$description": "Hover state for chart color 1"
+            }
+          },
+          "2": {
+            "lighter": {
+              "$type": "color",
+              "$value": "{global.colors.teal.100}",
+              "$description": "Lighter variant of chart color 2"
+            },
+            "light": {
+              "$type": "color",
+              "$value": "{global.colors.teal.300}",
+              "$description": "Light variant of chart color 2"
+            },
+            "base": {
+              "$type": "color",
+              "$value": "{global.colors.teal.500}",
+              "$description": "Chart color 2 for categorical data"
+            },
+            "dark": {
+              "$type": "color",
+              "$value": "{global.colors.teal.700}",
+              "$description": "Dark variant of chart color 2"
+            },
+            "darker": {
+              "$type": "color",
+              "$value": "{global.colors.teal.900}",
+              "$description": "Darker variant of chart color 2"
+            },
+            "hover": {
+              "$type": "color",
+              "$value": "{global.colors.teal.700}",
+              "$description": "Hover state for chart color 2"
+            }
+          },
+          "3": {
+            "lighter": {
+              "$type": "color",
+              "$value": "{global.colors.cyan.100}",
+              "$description": "Lighter variant of chart color 3"
+            },
+            "light": {
+              "$type": "color",
+              "$value": "{global.colors.cyan.300}",
+              "$description": "Light variant of chart color 3"
+            },
+            "base": {
+              "$type": "color",
+              "$value": "{global.colors.cyan.500}",
+              "$description": "Chart color 3 for categorical data"
+            },
+            "dark": {
+              "$type": "color",
+              "$value": "{global.colors.cyan.700}",
+              "$description": "Dark variant of chart color 3"
+            },
+            "darker": {
+              "$type": "color",
+              "$value": "{global.colors.cyan.900}",
+              "$description": "Darker variant of chart color 3"
+            },
+            "hover": {
+              "$type": "color",
+              "$value": "{global.colors.cyan.700}",
+              "$description": "Hover state for chart color 3"
+            }
+          },
+          "4": {
+            "lighter": {
+              "$type": "color",
+              "$value": "{global.colors.purple.100}",
+              "$description": "Lighter variant of chart color 4"
+            },
+            "light": {
+              "$type": "color",
+              "$value": "{global.colors.purple.300}",
+              "$description": "Light variant of chart color 4"
+            },
+            "base": {
+              "$type": "color",
+              "$value": "{global.colors.purple.500}",
+              "$description": "Chart color 4 for categorical data"
+            },
+            "dark": {
+              "$type": "color",
+              "$value": "{global.colors.purple.700}",
+              "$description": "Dark variant of chart color 4"
+            },
+            "darker": {
+              "$type": "color",
+              "$value": "{global.colors.purple.900}",
+              "$description": "Darker variant of chart color 4"
+            },
+            "hover": {
+              "$type": "color",
+              "$value": "{global.colors.purple.700}",
+              "$description": "Hover state for chart color 4"
+            }
+          },
+          "5": {
+            "lighter": {
+              "$type": "color",
+              "$value": "{global.colors.charcoal.100}",
+              "$description": "Lighter variant of chart color 5"
+            },
+            "light": {
+              "$type": "color",
+              "$value": "{global.colors.charcoal.300}",
+              "$description": "Light variant of chart color 5"
+            },
+            "base": {
+              "$type": "color",
+              "$value": "{global.colors.charcoal.500}",
+              "$description": "Chart color 5 for categorical data"
+            },
+            "dark": {
+              "$type": "color",
+              "$value": "{global.colors.charcoal.700}",
+              "$description": "Dark variant of chart color 5"
+            },
+            "darker": {
+              "$type": "color",
+              "$value": "{global.colors.charcoal.900}",
+              "$description": "Darker variant of chart color 5"
+            },
+            "hover": {
+              "$type": "color",
+              "$value": "{global.colors.charcoal.700}",
+              "$description": "Hover state for chart color 5"
+            }
+          },
+          "6": {
+            "lighter": {
+              "$type": "color",
+              "$value": "{global.colors.blue.100}",
+              "$description": "Lighter variant of chart color 6"
+            },
+            "light": {
+              "$type": "color",
+              "$value": "{global.colors.blue.300}",
+              "$description": "Light variant of chart color 6"
+            },
+            "base": {
+              "$type": "color",
+              "$value": "{global.colors.blue.500}",
+              "$description": "Chart color 6 for categorical data"
+            },
+            "dark": {
+              "$type": "color",
+              "$value": "{global.colors.blue.700}",
+              "$description": "Dark variant of chart color 6"
+            },
+            "darker": {
+              "$type": "color",
+              "$value": "{global.colors.blue.900}",
+              "$description": "Darker variant of chart color 6"
+            },
+            "hover": {
+              "$type": "color",
+              "$value": "{global.colors.blue.700}",
+              "$description": "Hover state for chart color 6"
+            }
+          }
+        }
+      },
+      "text": {
+        "default": {
+          "$type": "color",
+          "$value": "{global.colors.text.default}",
+          "$description": "Primary text color"
+        },
+        "link": {
+          "default": {
+            "$type": "color",
+            "$value": "{global.colors.blue.500}",
+            "$description": "Link color"
+          },
+          "hover": {
+            "$type": "color",
+            "$value": "{global.colors.cyan.700}",
+            "$description": "Link color on hover"
+          }
+        },
+        "warning": {
+          "$type": "color",
+          "$value": "{global.colors.text.warning}",
+          "$description": "Text color used for warning messages."
+        },
+        "error": {
+          "$type": "color",
+          "$value": "{global.colors.text.error}",
+          "$description": "Text color used for error messages."
+        },
+        "success": {
+          "$type": "color",
+          "$value": "{global.colors.text.success}",
+          "$description": "Text color used for success messages."
+        },
+        "info": {
+          "$type": "color",
+          "$value": "{global.colors.text.info}",
+          "$description": "Text color used for informational messages."
+        }
+      },
+      "icon": {
+        "primary": {
+          "$type": "color",
+          "$value": "{global.colors.icon.primary}",
+          "$description": "Icon color"
+        },
+        "success": {
+          "$type": "color",
+          "$value": "{global.colors.icon.success}",
+          "$description": "Icon color used to indicate success."
+        },
+        "warning": {
+          "$type": "color",
+          "$value": "{global.colors.icon.warning}",
+          "$description": "Icon color used to indicate warnings."
+        },
+        "error": {
+          "$type": "color",
+          "$value": "{global.colors.icon.error}",
+          "$description": "Icon color used to indicate errors."
+        },
+        "info": {
+          "$type": "color",
+          "$value": "{global.colors.icon.info}",
+          "$description": "Icon color used to indicate informational states."
+        }
+      },
+      "surface": {
+        "background": {
+          "$type": "color",
+          "$value": "{global.colors.neutral.100}",
+          "$description": "Background color"
+        },
+        "header": {
+          "$type": "color",
+          "$value": "{global.colors.charcoal.500}",
+          "$description": "Header background color"
+        }
+      }
+    },
+    "font": {
+      "title": {
+        "xlarge": {
+          "$value": {
+            "fontSize": "{global.font.size.9}",
+            "fontWeight": "{global.font.weight.bold}",
+            "lineHeight": "{global.font.lineHeight.6}",
+            "fontFamily": "{global.font.family.title}"
+          },
+          "$type": "typography",
+          "$description": "Extra large title typography"
+        },
+        "large": {
+          "$value": {
+            "fontSize": "{global.font.size.8}",
+            "fontWeight": "{global.font.weight.bold}",
+            "lineHeight": "{global.font.lineHeight.5}",
+            "fontFamily": "{global.font.family.title}"
+          },
+          "$type": "typography",
+          "$description": "Large title typography"
+        },
+        "medium": {
+          "$value": {
+            "fontSize": "{global.font.size.7}",
+            "fontWeight": "{global.font.weight.bold}",
+            "lineHeight": "{global.font.lineHeight.4}",
+            "fontFamily": "{global.font.family.title}"
+          },
+          "$type": "typography",
+          "$description": "Medium title typography"
+        },
+        "small": {
+          "$value": {
+            "fontSize": "{global.font.size.6}",
+            "fontWeight": "{global.font.weight.bold}",
+            "lineHeight": "{global.font.lineHeight.3}",
+            "fontFamily": "{global.font.family.title}"
+          },
+          "$type": "typography",
+          "$description": "Small title typography"
+        },
+        "xsmall": {
+          "$value": {
+            "fontSize": "{global.font.size.4}",
+            "fontWeight": "{global.font.weight.bold}",
+            "lineHeight": "{global.font.lineHeight.2}",
+            "fontFamily": "{global.font.family.title}"
+          },
+          "$type": "typography",
+          "$description": "Extra small title typography"
+        }
+      },
+      "heading": {
+        "xlarge": {
+          "$value": {
+            "fontSize": "{global.font.size.9}",
+            "fontWeight": "{global.font.weight.bold}",
+            "lineHeight": "{global.font.lineHeight.6}",
+            "fontFamily": "{global.font.family.heading}"
+          },
+          "$type": "typography",
+          "$description": "Extra large heading typography"
+        },
+        "large": {
+          "$value": {
+            "fontSize": "{global.font.size.8}",
+            "fontWeight": "{global.font.weight.bold}",
+            "lineHeight": "{global.font.lineHeight.5}",
+            "fontFamily": "{global.font.family.heading}"
+          },
+          "$type": "typography",
+          "$description": "Large heading typography"
+        },
+        "medium": {
+          "$value": {
+            "fontSize": "{global.font.size.7}",
+            "fontWeight": "{global.font.weight.bold}",
+            "lineHeight": "{global.font.lineHeight.4}",
+            "fontFamily": "{global.font.family.heading}"
+          },
+          "$type": "typography",
+          "$description": "Medium heading typography"
+        },
+        "small": {
+          "$value": {
+            "fontSize": "{global.font.size.6}",
+            "fontWeight": "{global.font.weight.bold}",
+            "lineHeight": "{global.font.lineHeight.3}",
+            "fontFamily": "{global.font.family.heading}"
+          },
+          "$type": "typography",
+          "$description": "Small heading typography"
+        },
+        "xsmall": {
+          "$value": {
+            "fontSize": "{global.font.size.4}",
+            "fontWeight": "{global.font.weight.bold}",
+            "lineHeight": "{global.font.lineHeight.2}",
+            "fontFamily": "{global.font.family.heading}"
+          },
+          "$type": "typography",
+          "$description": "Extra small heading typography"
+        }
+      },
+      "body": {
+        "large": {
+          "$value": {
+            "fontSize": "{global.font.size.5}",
+            "fontWeight": "{global.font.weight.regular}",
+            "lineHeight": "{global.font.lineHeight.5}",
+            "fontFamily": "{global.font.family.body}"
+          },
+          "$type": "typography",
+          "$description": "Large body typography"
+        },
+        "medium": {
+          "$value": {
+            "fontSize": "{global.font.size.4}",
+            "fontWeight": "{global.font.weight.regular}",
+            "lineHeight": "{global.font.lineHeight.4}",
+            "fontFamily": "{global.font.family.body}"
+          },
+          "$type": "typography",
+          "$description": "Medium body typography"
+        },
+        "small": {
+          "$value": {
+            "fontSize": "{global.font.size.3}",
+            "fontWeight": "{global.font.weight.regular}",
+            "lineHeight": "{global.font.lineHeight.3}",
+            "fontFamily": "{global.font.family.body}"
+          },
+          "$type": "typography",
+          "$description": "Small body typography"
+        },
+        "xsmall": {
+          "$value": {
+            "fontSize": "{global.font.size.2}",
+            "fontWeight": "{global.font.weight.regular}",
+            "lineHeight": "{global.font.lineHeight.2}",
+            "fontFamily": "{global.font.family.body}"
+          },
+          "$type": "typography",
+          "$description": "Extra small body typography"
+        }
+      }
+    }
+  }
+}

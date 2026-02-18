@@ -1,0 +1,21 @@
+{
+  "name": "k0ntxt",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "style-dictionary": "^4.3.3"
+  },
+  "scripts": {
+    "build": "npm run build:css && npm run build:js && npm run build:chakra",
+    "build:all": "npm run build",
+    "build:css": "style-dictionary build --verbose --config config/css-light.js && style-dictionary build --verbose --config config/css-dark.js",
+    "build:js": "style-dictionary build --verbose --config config/es6.js",
+    "build:chakra": "style-dictionary build --verbose --config config/chakra-v3-tokens.js && style-dictionary build --verbose --config config/chakra-v3-semanticTokens.js && style-dictionary build --verbose --config config/chakra-v2-tokens.js",
+    "validate:tokens": "node scripts/validate-tokens.mjs",
+    "validate:css": "node scripts/validate-css-output.mjs",
+    "validate:chakra": "node scripts/validate-chakra-output.mjs",
+    "check": "npm run validate:tokens && npm run build && npm run validate:css && npm run validate:chakra",
+    "init": "style-dictionary init",
+    "clean": "style-dictionary clean"
+  },
+  "type": "module"
+}
